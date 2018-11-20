@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2018-11-20T11:53:19.475-06:00
+  initializedAtString: 2018-11-20T11:44:25.283-06:00
+  log:
+  - commitID: d29f604456889ed90522778f8600355430c750c2
+    mergeA: 
+    mergeB: 
+    authorName: HectorNLeon
+    authorEmail: 32803433+HectorNLeon@users.noreply.github.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Initial commit
+    description: Initial commit
+    timeString: 2018-11-20T11:16:11.000-06:00
+    commitTimeString: 2018-11-20T11:16:11.000-06:00
+    changes:
+    - path: .gitignore
+      fullPath: /Users/hectorleon/Docs/TicTacToe/.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      status: 4
+      staged: 0
