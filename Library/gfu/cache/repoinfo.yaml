@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2018-11-20T11:51:29.438-06:00
-  initializedAtString: 2018-11-20T11:43:54.180-06:00
+  lastUpdatedAtString: 2018-11-20T16:06:30.945-06:00
+  initializedAtString: 2018-11-20T12:06:02.663-06:00
   currentGitRemote:
     name: origin
     url: https://github.com/HectorNLeon/Challenge3
@@ -24,13 +24,13 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: master
-    tracking: 
+    tracking: origin/master
   currentConfigBranch:
     name: master
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/HectorNLeon/Challenge3
+    trackingBranch: master
   currentConfigRemote:
     name: origin
     url: https://github.com/HectorNLeon/Challenge3
