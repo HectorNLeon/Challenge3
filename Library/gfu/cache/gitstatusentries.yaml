@@ -12,138 +12,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2018-11-20T22:03:14.027-06:00
+  lastUpdatedAtString: 2018-11-21T02:46:31.273-06:00
   initializedAtString: 2018-11-20T19:43:37.274-06:00
   entries:
-  - path: Assembly-CSharp.csproj
-    fullPath: C:\Users\hecto\Documents\Challenge3\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    status: 3
-    staged: 1
   - path: Assets\GameController.cs
     fullPath: C:\Users\hecto\Documents\Challenge3\Assets\GameController.cs
     projectPath: Assets\GameController.cs
     originalPath: 
-    status: 4
-    staged: 1
-  - path: Assets\GameController.cs.meta
-    fullPath: C:\Users\hecto\Documents\Challenge3\Assets\GameController.cs.meta
-    projectPath: Assets\GameController.cs.meta
-    originalPath: 
-    status: 4
-    staged: 1
-  - path: Assets\Prefabs\Button.prefab
-    fullPath: C:\Users\hecto\Documents\Challenge3\Assets\Prefabs\Button.prefab
-    projectPath: Assets\Prefabs\Button.prefab
-    originalPath: 
-    status: 4
-    staged: 1
-  - path: Assets\Prefabs\Button.prefab.meta
-    fullPath: C:\Users\hecto\Documents\Challenge3\Assets\Prefabs\Button.prefab.meta
-    projectPath: Assets\Prefabs\Button.prefab.meta
-    originalPath: 
-    status: 4
-    staged: 1
-  - path: Assets\Scenes\Menu.unity
-    fullPath: C:\Users\hecto\Documents\Challenge3\Assets\Scenes\Menu.unity
-    projectPath: Assets\Scenes\Menu.unity
-    originalPath: 
     status: 3
     staged: 0
-  - path: Assets\Scenes\TicTacToe.unity
-    fullPath: C:\Users\hecto\Documents\Challenge3\Assets\Scenes\TicTacToe.unity
-    projectPath: Assets\Scenes\TicTacToe.unity
-    originalPath: 
-    status: 4
-    staged: 1
-  - path: Assets\Scenes\TicTacToe.unity.meta
-    fullPath: C:\Users\hecto\Documents\Challenge3\Assets\Scenes\TicTacToe.unity.meta
-    projectPath: Assets\Scenes\TicTacToe.unity.meta
-    originalPath: 
-    status: 4
-    staged: 1
   - path: Assets\SetOnClick.cs
     fullPath: C:\Users\hecto\Documents\Challenge3\Assets\SetOnClick.cs
     projectPath: Assets\SetOnClick.cs
     originalPath: 
-    status: 4
-    staged: 1
-  - path: Assets\SetOnClick.cs.meta
-    fullPath: C:\Users\hecto\Documents\Challenge3\Assets\SetOnClick.cs.meta
-    projectPath: Assets\SetOnClick.cs.meta
-    originalPath: 
-    status: 4
-    staged: 1
+    status: 3
+    staged: 0
   - path: Library\assetDatabase3
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
-    staged: 1
+    staged: 0
   - path: Library\gfu\cache\branches.yaml
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     status: 3
-    staged: 1
+    staged: 0
   - path: Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
-    staged: 1
+    staged: 0
   - path: Library\gfu\cache\gitlog.yaml
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     status: 3
-    staged: 1
+    staged: 0
   - path: Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
-    staged: 1
+    staged: 0
   - path: Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
-    staged: 1
+    staged: 0
   - path: Library\gfu\cache\gituser.yaml
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\gfu\cache\gituser.yaml
     projectPath: Library\gfu\cache\gituser.yaml
     originalPath: 
     status: 3
-    staged: 1
+    staged: 0
   - path: Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     status: 3
-    staged: 1
-  - path: Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\hecto\Documents\Challenge3\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    status: 3
-    staged: 1
+    staged: 0
   - path: Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     status: 3
-    staged: 1
+    staged: 0
   - path: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
     fullPath: C:\Users\hecto\Documents\Challenge3\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
-    originalPath: 
-    status: 3
-    staged: 1
-  - path: ProjectSettings\EditorBuildSettings.asset
-    fullPath: C:\Users\hecto\Documents\Challenge3\ProjectSettings\EditorBuildSettings.asset
-    projectPath: ProjectSettings\EditorBuildSettings.asset
     originalPath: 
     status: 3
     staged: 0

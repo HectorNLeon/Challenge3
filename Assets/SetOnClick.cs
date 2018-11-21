@@ -15,6 +15,7 @@ public class SetOnClick : MonoBehaviour {
         butonText.text = gameController.GetPlayerSide();
         button.interactable = false;
         gameController.EndTurn();
+        gameController.AIturn();
     }
     public void SetGameControllerReference(GameController controller)
     {
