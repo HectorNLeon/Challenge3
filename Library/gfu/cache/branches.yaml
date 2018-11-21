@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2018-11-20T16:06:30.943-06:00
-  initializedAtString: 2018-11-20T16:04:57.066-06:00
+  lastUpdatedAtString: 2018-11-20T21:17:56.040-06:00
+  initializedAtString: 2018-11-20T20:15:53.603-06:00
   localBranches:
   - name: master
     tracking: origin/master
   remoteBranches:
+  - name: origin/HEAD
+    tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
   remotes:
@@ -42,9 +44,15 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - HEAD
       - master
     subKeyValues:
     - Values:
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/HectorNLeon/Challenge3
+        trackingBranch: 
       - name: master
         remote:
           name: origin
