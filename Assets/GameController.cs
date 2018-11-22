@@ -17,12 +17,31 @@ public class GameController : MonoBehaviour
 
     private string playerSide;
 
+    private float chance2Win = 1.0f;
+    private static int difficulty = 0;
+
     void Awake()
     {
         SetGameControllerReferenceOnButtons();
         playerSide = "X";
         gameOverPanel.SetActive(false);
         moveCount = 0;
+
+        difficulty = PlayerPrefs.GetInt("Difficulty");
+        switch (difficulty) {
+        	case 0: 
+        		chance2Win = 0.2f;
+        		break;
+        	case 1:
+        		chance2Win = 0.6f;
+        		break;
+        	case 2:
+        		chance2Win = 1.0f;
+        		break;
+        	default:
+        		chance2Win = 1.0f;
+        	break;
+        }
     }
 
     void SetGameControllerReferenceOnButtons()
@@ -46,7 +65,22 @@ public class GameController : MonoBehaviour
             tempB.Add(buttonList[i].text);
         }
         string[] newB = tempB.ToArray();
-        int index = minimax(newB, playerSide);
+
+
+        //difficulty
+        int index = 0;
+        float randomN = Random.value;
+        if (randomN < chance2Win) {
+        	index = minimax(newB, playerSide);
+    	} else {
+    		int[] spots = availSpots(newB);
+
+    		int i = Random.Range(0, spots.Length);
+    		index = spots[i];
+    	}
+
+    	Debug.Log("Random:" + randomN.ToString());
+    	Debug.Log("Chance 2 win:" + chance2Win.ToString());
         Debug.Log(index);
         buttonList[index].text = "O";
         buttonList[index].GetComponentInParent<Button>().interactable = false;

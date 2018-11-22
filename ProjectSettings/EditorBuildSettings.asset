@@ -5,10 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: e5cd42f63a74c41fc9d553323101984e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TicTacToe.unity
     guid: ebe66621ae9267f4e941a15bc6cff182
+  - enabled: 1
+    path: Assets/Scenes/Menu 3D.unity
+    guid: fa0913115ac1d4fba8b9d10280f4b04d
+  - enabled: 1
+    path: Assets/Scenes/TicTacToe 3D.unity
+    guid: d1a0d77d47f3a409b867a5ba8558f07d
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: ccf4214207eea4ab99c56d33f099a519
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 9d3ad8a250d89489abc6eba8456aae88
+  - enabled: 1
+    path: Assets/Scenes/Difficulty.unity
+    guid: 64bd6f86629ea427c8a033f4a69b835b
   m_configObjects: {}
