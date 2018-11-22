@@ -12,10 +12,19 @@ public class SetOnClick : MonoBehaviour {
 
 	public void setText()
     {
-        butonText.text = gameController.GetPlayerSide();
-        button.interactable = false;
-        gameController.EndTurn();
-        gameController.AIturn();
+        if (ModeData.Mode == 0)
+        {
+            butonText.text = gameController.GetPlayerSide();
+            button.interactable = false;
+            gameController.EndTurn();
+        }
+        else if (ModeData.Mode == 1)
+        {
+            butonText.text = gameController.GetPlayerSide();
+            button.interactable = false;
+            gameController.EndTurn();
+            gameController.AIturn();
+        }
     }
     public void SetGameControllerReference(GameController controller)
     {

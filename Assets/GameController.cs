@@ -42,6 +42,21 @@ public class GameController : MonoBehaviour
         		chance2Win = 1.0f;
         	break;
         }
+        if (ModeData.Mode == 2)
+        {
+            onlyAI();
+        }
+    }
+    public void onlyAI()
+    {
+        for (int i = 0; i < buttonList.Length; i++)
+        {
+            buttonList[i].GetComponentInParent<Button>().interactable = false;
+        }
+        while (moveCount <= 9)
+        {
+            AIturn();
+        }
     }
 
     void SetGameControllerReferenceOnButtons()
@@ -71,7 +86,7 @@ public class GameController : MonoBehaviour
         int index = 0;
         float randomN = Random.value;
         if (randomN < chance2Win) {
-        	index = minimax(newB, playerSide);
+        	index = minimax(newB, playerSide,0);
     	} else {
     		int[] spots = availSpots(newB);
 
@@ -82,7 +97,7 @@ public class GameController : MonoBehaviour
     	Debug.Log("Random:" + randomN.ToString());
     	Debug.Log("Chance 2 win:" + chance2Win.ToString());
         Debug.Log(index);
-        buttonList[index].text = "O";
+        buttonList[index].text = playerSide;
         buttonList[index].GetComponentInParent<Button>().interactable = false;
         EndTurn();
     }
@@ -159,23 +174,25 @@ public class GameController : MonoBehaviour
         gameOverText.text = value;
     }
 
-    int minimax(string[] newBoard, string player)
+    int minimax(string[] newBoard, string player, int depth)
     {
-        
+
         int[] spots = availSpots(newBoard);
-        
+
         if (checkWin(newBoard, human))
         {
-            return -10;
+            return depth - 10;
+
         }
         else if (checkWin(newBoard, cpu))
         {
-            return 10;
+            return 10 - depth;
         }
         else if (spots.Length == 0)
         {
             return 0;
         }
+        depth++;
         int result;
         string mindex;
         List<List<int>> moves = new List<List<int>>();
@@ -192,14 +209,16 @@ public class GameController : MonoBehaviour
             newBoard[spots[i]] = player;
             if (player == cpu)
             {
-                result = minimax(newBoard, human);
+                result = minimax(newBoard, human, depth);
+                //Debug.Log(result);
                 moves.Add(new List<int>());
                 moves[i].Add(spots[i]);
                 moves[i].Add(result);
             }
             else
             {
-                result = minimax(newBoard, cpu);
+                result = minimax(newBoard, cpu, depth);
+                //Debug.Log(result);
                 moves.Add(new List<int>());
                 moves[i].Add(spots[i]);
                 moves[i].Add(result);
@@ -213,7 +232,7 @@ public class GameController : MonoBehaviour
             int bestScore = -10000;
             for (int i = 0; i < moves.Count; i++)
             {
-                
+
                 if (moves[i][1] > bestScore)
                 {
                     bestScore = moves[i][1];
@@ -226,7 +245,7 @@ public class GameController : MonoBehaviour
             int bestScore = 10000;
             for (int i = 0; i < moves.Count; i++)
             {
-                
+
                 if (moves[i][1] < bestScore)
                 {
                     bestScore = moves[i][1];
